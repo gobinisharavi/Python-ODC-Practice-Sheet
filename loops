@@ -1,0 +1,82 @@
+Q1. Sum of Digits:
+Given an integer N, print the sum of its digits
+
+n = int(input("Enter a number: "))
+sum_digits = 0
+
+while n > 0:
+    sum_digits += n % 10
+    n //= 10
+
+print("Sum of digits:", sum_digits)
+
+Q2. Reverse a Number:
+Reverse the given integer without converting to string.
+
+n = int(input("Enter a number: "))
+reverse = 0
+
+while n > 0:
+    reverse = reverse * 10 + (n % 10)
+    n //= 10
+
+print("Reversed number:", reverse)
+
+Q3. Armstrong Number:
+Check whether a number is an Armstrong number or not.
+
+n = int(input("Enter a number: "))
+temp = n
+power = len(str(n))
+sum_value = 0
+
+while temp > 0:
+    digit = temp % 10
+    sum_value += digit ** power
+    temp //= 10
+
+if sum_value == n:
+    print("Armstrong Number")
+else:
+    print("Not an Armstrong Number")
+
+Q4. Fibonacci Series:
+Print first N Fibonacci numbers.
+
+n = int(input("Enter how many terms: "))
+a, b = 0, 1
+
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+
+Q5. Prime Count:
+Count how many prime numbers exist from 1 to N.
+
+n = int(input("Enter N: "))
+count = 0
+
+for num in range(2, n + 1):
+    is_prime = True
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        count += 1
+
+print("Total prime numbers:", count)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
