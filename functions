@@ -1,0 +1,94 @@
+Q6. Even or Odd Function
+
+def check_even_odd(n):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+num = int(input("Enter a number: "))
+print(check_even_odd(num))
+
+Q7. Factorial Function
+
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+num = int(input("Enter a number: "))
+print("Factorial:", factorial(num))
+
+Q8. Largest of Three Numbers
+
+def largest(a, b, c):
+    return max(a, b, c)
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+print("Largest:", largest(a, b, c))
+
+Q9. Count Vowels
+
+def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+
+string = input("Enter a string: ")
+print("Vowel count:", count_vowels(string))
+
+Q10. Simple Menu Calculator
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    return a / b
+
+while True:
+    print("\n1.Add 2.Subtract 3.Multiply 4.Divide 5.Exit")
+    choice = int(input("Enter choice: "))
+
+    if choice == 5:
+        break
+ a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+
+    if choice == 1:
+        print("Result:", add(a, b))
+    elif choice == 2:
+        print("Result:", sub(a, b))
+    elif choice == 3:
+        print("Result:", mul(a, b))
+    elif choice == 4:
+        print("Result:", div(a, b))
+    else:
+        print("Invalid choice")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
